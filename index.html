@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ace Academy Nigeria - registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <h1>ACE ACADEMY</h1>
+            <p>Amadi Housing Estate, Aiport Rd, Obiri-Ikwerre, Port Harcort, Nigeria.</p>
+            <p>Phone: 09045378213, 08123670412.</p>
+            <p>Email: <a href="email.html">aceacademyph@yahoomail.com</a>
+            <hr>    
+            <h3>Please fill out this registration form with the required information.</h3>
+        </header>
+
+    <!-- form-for-registration -->
+    <form action="linked.html" method="post">
+        <div>
+            <p>CONTACT/IDENTIFICATION</p>
+            <label for="fname">
+                First Name:
+                <input type="text" name="fname" id="fname" required class="name">
+            </label>
+        </div>
+        <br>
+        <!-- middle-name -->
+        <div>
+            <label for="mname">
+                Middle Name:
+                <input type="text" name="mname" id="mname" required class="name">
+            </label>
+        </div>
+        <br>
+        <!-- last-name -->
+        <div>
+            <label for="lname">
+                Last Name:
+                <input type="text" name="lname" id="lname" required class="name">
+            </label>
+        </div>
+        <br>
+        <!-- guardian-name -->
+        <div>
+            <label for="guardian-name">
+                Parent's/Guardian's Name:
+                <input type="text" name="guardian-name" id="guardian-name" required class="name">
+            </label>
+        </div>
+        <br>
+        <!-- phone-number -->
+        <div>
+            <label for="Phone">
+                Parent's Phone Number:
+                <input type="number" name="Phone" id="Phone" required class="name">
+            </label>
+        </div>
+        <br>
+        <!-- address -->
+        <div>
+            <label for="address">
+                Address:
+                <input type="text" name="address" id="address" required class="name">
+            </label>
+        </div>
+        <br>
+        <p>PERSONAL DATA</p>
+        <!-- gender -->
+        <div>
+            <label for="Male">
+                <input type="radio" name="gender" id="Male" required class="inline">
+                 Male
+            </label>
+        <div>
+        <br>
+            <label for="Female">
+                <input type="radio" name="gender" id="Female" required class="inline">
+                 Female
+            </label>
+        </div>
+        <br>
+        <!-- if sibling attends school already -->
+        <div>
+            <label for="Sibling">
+                <input type="checkbox" name="Sibling" id="Sibling" class="inline">
+                 Sibling Attending
+            </label>
+        </div>
+        <br>
+        <!-- age -->
+        <div>
+            <label for="age">
+                Age:
+                <select required>
+                    <option value="">None</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                </select>
+            </label>
+        </div>
+        <br>
+        <!-- birth-date -->
+        <div>
+            <label for="bday">
+                Date of Birth:
+                <input type="date" name="bday" id="bday"
+                 value="" min="2014-01-01" max="2024-12-31" required>
+            </label>
+        </div>
+        <br>
+        <p>EDUCATION</p>
+        <!-- class level -->
+        <div>
+            <label for="level">
+                Current Educational Level:
+                <select name="level" id="level" required>
+                    <option value="">None</option>
+                    <option value="1">JSS1</option>
+                    <option value="2">JSS2</option>
+                    <option value="3">JSS3</option>
+                    <option value="4">SS1</option>
+                    <option value="5">SS2</option>
+                    <option value="6">SS3</option>
+                </select>
+            </label>
+        </div>
+        <br>
+        <!-- extra curricular activities -->
+        <div>
+            <label for="extra-curriculum">
+                Extra-Curricular Activity:
+                <select name="extra-curriculum" id="extra-curriculum"
+                 name="extra-curriculum">
+                    <option value="">None</option>
+                    <option value="0">Drama Club</option>
+                    <option value="1">Photography Club</option>
+                    <option value="2">Debate Club</option>
+                    <option value="3">Fashion Design</option>
+                    <option value="4">Dance Club</option>
+                    <option value="5">Atheletics Club</option>
+                    <option value="6">Poetry Club</option>
+                    <option value="7">Cooking Club</option>
+                    <option value="8">Community Service</option>
+                    <option value="9">Electronics Club</option>
+                </select>
+            </label>
+        </div>
+        <br>
+        <!-- ref -->
+        <div>
+            <label for="referrence">
+                How did you hear about us?
+                <select name="referrence" id="referrence"  name="referrence">
+                    <option value="">None</option>
+                    <option value="1">I saw your advert on TV.</option>
+                    <option value="2">A friend</option>
+                    <option value="3">My parent(s)</option>
+                    <option value="4">I received your flier</option>
+                    <option value="5">Other</option>
+                </select>
+            </label>
+        </div>
+        <br>
+        <input type="submit">
+    </form>
+    </section>  
+</body>
+</html>
